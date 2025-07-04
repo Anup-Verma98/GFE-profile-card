@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #171717;
+  --secondary-color: #525252;
+
+}
+
 body {
   margin: 0;
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -8,6 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  position: relative;
+
+  background-image: linear-gradient(#F9FAFB 0%, #D2D6DB 100%);
 }
 
 * {
@@ -26,4 +35,100 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+.card-container__wrapper {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  translate: -50% 0;
+  width: 340px;
+}
+
+.card-container {
+  padding: 24px 16px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  box-shadow: 0px 1px 2px 0 rgb(0 0 0 / 0.06), 0px 1px 3px 0 rgb(0 0 0 / 0.10);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user-image {
+  img {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+  }
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+
+.name,
+.designation {
+  display: inline-block;
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.designation {
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-weight: normal;
+}
+
+.user-description {
+  text-align: center;
+}
+
+.introduction {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+.reach-out {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.btn-contact {
+  background-color: #4338CA;
+  padding: 10px 16px;
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
